@@ -1,5 +1,8 @@
 /* Body */
 body {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     width: 80vw;
     height: 100%;
     margin: 0 auto;
@@ -12,9 +15,16 @@ body {
 /* Header */
 
 header {
+    order: 0;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 10%;
-    margin-bottom: 4%;
+}
+
+.logo {
+   width: 100px;
+   height: 100px;
 }
 
 hr {
@@ -26,20 +36,19 @@ hr {
 /* content */
 
 .author-info {
-    float: right;
+    align-content: flex-end;
     text-transform: uppercase;
 }
 
 .job {
-    float: right;
-    margin-top: -2%;
+    margin-left: 10%;
 }
 
 .main-img {
     width: 100%;
     height: 48vw;
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .work-list {
@@ -76,6 +85,7 @@ hr {
 /* Footer */
 
 footer {
+    order: 5;
     text-align: center;
     font-family: 'Tangerine', cursive;
 }
@@ -125,6 +135,10 @@ footer {
 
     body {
         font-size: 1.3em;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
     }
 }
 
